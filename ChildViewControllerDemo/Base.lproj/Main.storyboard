@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cL-EG-Vf0">
+                                <rect key="frame" x="16" y="34" width="79.5" height="32"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79.5" id="2mM-Wx-HN0"/>
+                                    <constraint firstAttribute="height" constant="32" id="hyB-eO-7B3"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="79.5" id="kcy-Uv-bmA"/>
+                                </constraints>
+                                <state key="normal" title="理财">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="click1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9qP-6L-coF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0w-ZD-2tp">
+                                <rect key="frame" x="148" y="34" width="79" height="32"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="4bl-id-9t5"/>
+                                    <constraint firstAttribute="width" constant="79" id="Vef-9L-5cg"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="79" id="r0H-Go-fUE"/>
+                                </constraints>
+                                <state key="normal" title="金融">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="click2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lce-kl-A6e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhv-Xf-lyV">
+                                <rect key="frame" x="279" y="34" width="79.5" height="32"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="ar6-wW-28x"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="79.5" id="esP-NY-Ezt"/>
+                                    <constraint firstAttribute="width" constant="79.5" id="fsI-nG-Z1u"/>
+                                </constraints>
+                                <state key="normal" title="基金">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="click3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nmq-yI-Ste"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fhv-Xf-lyV" secondAttribute="trailing" constant="16.5" id="6ZK-86-SgM"/>
+                            <constraint firstItem="0cL-EG-Vf0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="A6b-Wh-zMB"/>
+                            <constraint firstItem="e0w-ZD-2tp" firstAttribute="width" secondItem="0cL-EG-Vf0" secondAttribute="width" id="Gs7-Gm-iLO"/>
+                            <constraint firstItem="fhv-Xf-lyV" firstAttribute="width" secondItem="0cL-EG-Vf0" secondAttribute="width" id="Pdt-bT-mee"/>
+                            <constraint firstItem="e0w-ZD-2tp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TQ8-PI-okJ"/>
+                            <constraint firstItem="0cL-EG-Vf0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="ikb-3X-fG3"/>
+                            <constraint firstItem="e0w-ZD-2tp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="wSA-X7-hfT"/>
+                            <constraint firstItem="fhv-Xf-lyV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="yTE-bj-0SF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
